@@ -3,6 +3,7 @@ from PIL import ImageTk, Image
 ventana = tk.Tk()
 ventana.title("Mi primera ventana")
 ventana.geometry("400x300")
+ventana.configure(bg="#0D0D0D")
 resultado = tk.Label(ventana, text=f"Resultado = ")
 resultado.place(x=160, y=140)
 resultado.place_forget()
