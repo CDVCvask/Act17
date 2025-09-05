@@ -2,12 +2,13 @@ import tkinter as tk
 from PIL import ImageTk, Image
 ventana = tk.Tk()
 ventana.title("Mi primera ventana")
-ventana.geometry("400x300")
+ancho_ventana = 400
+alto_ventana = 300
 ancho_pantalla = ventana.winfo_screenwidth()
 alto_pantalla = ventana.winfo_screenheight()
-x = (ancho_pantalla // 2) - (400 // 2)
-y = (alto_pantalla // 2) - (300 // 2)
-ventana.geometry(f"{400}x{300}+{x}+{y}")
+x = (ancho_pantalla // 2) - (ancho_ventana // 2)
+y = (alto_pantalla // 2) - (alto_ventana // 2)
+ventana.geometry(f"{ancho_ventana}x{alto_ventana }+{x}+{y}")
 resultado = tk.Label(ventana, text=f"Resultado = ")
 resultado.place(x=160, y=140)
 resultado.place_forget()
